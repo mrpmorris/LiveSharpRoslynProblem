@@ -7,24 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="MoxyMixins\MixinCssClass.mixin" />
-    <None Remove="MoxyMixins\MixinEnabledDisabled.mixin" />
-    <None Remove="MoxyMixins\MixinHint.mixin" />
     <None Remove="MoxyMixins\MixinLabel.mixin" />
-    <None Remove="MoxyMixins\MixinPage.mixin" />
-    <None Remove="MoxyMixins\MixinVisibleHidden.mixin" />
   </ItemGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="MoxyMixins\MixinCssClass.mixin" />
-    <AdditionalFiles Include="MoxyMixins\MixinEnabledDisabled.mixin" />
-    <AdditionalFiles Include="MoxyMixins\MixinHint.mixin" />
     <AdditionalFiles Include="MoxyMixins\MixinLabel.mixin" />
-    <AdditionalFiles Include="MoxyMixins\MixinPage.mixin" />
-    <AdditionalFiles Include="MoxyMixins\MixinVisibleHidden.mixin" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="LiveSharp" Version="2.0.36" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.3" PrivateAssets="all" />
 		<PackageReference Include="Morris.Moxy" Version="1.1.0" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
@@ -33,5 +24,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Shared\LiveSharpRoslynProblem.Shared.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.3" />
+	</ItemGroup>
 
 </Project>
