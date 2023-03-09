@@ -1,0 +1,18 @@
+﻿@moxy
+@attribute required string DefaultLabel
+@moxy
+
+#nullable enable
+namespace {{ moxy.Class.Namespace }}
+{
+	using Microsoft.AspNetCore.Components;
+
+	partial class {{ moxy.Class.Name }}
+	{
+		[Parameter]
+		public string? Label { get; set; }
+
+		protected string EffectiveLabel => Label ?? "{{ DefaultLabel }}";
+	}
+}
+#nullable restore
